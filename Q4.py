@@ -32,7 +32,7 @@ def check(nums: List[int]) -> bool:
     
     # Find the point of rotation (disruption point)
     x = 0
-    for i in range(len(nums)): #
+    for i in range(len(nums)): # O(n)
         if i+1 < len(nums):
             if nums[i] > nums[i+1]:
                 x = i+1
