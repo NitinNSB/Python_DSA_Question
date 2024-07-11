@@ -26,3 +26,7 @@ def countNodesinLoop(head):
         count += 1
         if slow == fast:
            return count
+
+# Solution 2:- Use a set to store the address of the nodes and check if the address is 
+# already present in the set.Here you will get the starting point of the loop. Now same 
+# as above.
