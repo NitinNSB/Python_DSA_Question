@@ -14,7 +14,7 @@ Q : Given the head of a linked list, return the node where the cycle begins. If 
 
 # Solution 1:
 
-def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
+def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]: 
     my_set = set()
     while head:
         if head  in my_set:
@@ -25,7 +25,7 @@ def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
     return None 
 
 # Solution 2:
-def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
+def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]: 
     slow = head
     fast = head
     while fast and fast.next:
@@ -40,5 +40,3 @@ def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
         slow = slow.next
         fast = fast.next
     return slow 
-
-
